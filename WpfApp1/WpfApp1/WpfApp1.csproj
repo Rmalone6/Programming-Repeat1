@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Item.cs" />
     <Compile Include="Sales Register.xaml.cs">
       <DependentUpon>Sales Register.xaml</DependentUpon>
     </Compile>
