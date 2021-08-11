@@ -25,28 +25,41 @@
         <Label Content="Discount" HorizontalAlignment="Left" Margin="51,308,0,0" VerticalAlignment="Top"/>
         <Rectangle Fill="#FF8888C3" HorizontalAlignment="Left" Height="1" Margin="33,334,0,0" Stroke="Black" VerticalAlignment="Top" Width="292" Grid.ColumnSpan="2"/>
         <Label Content="Total Payable" HorizontalAlignment="Left" Margin="47,340,0,0" VerticalAlignment="Top" FontStyle="Italic" FontWeight="Bold"/>
-        <ListBox HorizontalAlignment="Left" Height="317" VerticalAlignment="Top" Width="217" Margin="365,49,0,0" Grid.Column="1">
-            <Slider Height="18" Width="207" Background="#FFDEDEF0" Foreground="White" BorderBrush="#FFF19C9C"/>
-            <Button Width="86" Height="64" Click="Button_Click_2">
+        <ListBox x:Name="itemlist" HorizontalAlignment="Stretch" Width="257" Margin="365,49,0,0" Grid.Column="2" SelectionChanged="ListBox_SelectionChanged" Height="317" VerticalAlignment="Top" Background="#FFDEDEF0" Grid.ColumnSpan="5" MaxHeight="317" VerticalContentAlignment="Center" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+            <Slider Height="18" Width="207" Background="#FFDEDEF0" Foreground="White" BorderBrush="#FFF19C9C" ValueChanged="Slider_ValueChanged"/>
+            <Button x:Name="applebtn" Width="86" Height="64" Click="Button_Click_2">
                 <Button.Background>
                     <ImageBrush ImageSource="9f2a63d7fcf4f314800dd3f4f40c4a67.png"/>
                 </Button.Background>
             </Button>
-            <Button Width="86" Height="64" Click="Button_Click_3">
+            <Button x:Name="bananabtn" Width="86" Height="64" Click="Button_Click_3">
+                <Button.Background>
+                    <ImageBrush ImageSource="714197.png" Stretch="Uniform"/>
+                </Button.Background>
                 <Image Height="54" Width="15"/>
             </Button>
-            <Button Content="" Width="86" Height="64"/>
-            <Button Content="" Width="86" Height="64"/>
-            <Button Content="" Width="86" Height="64"/>
-            <Button Content="" Width="84" Height="64"/>
-            <Button Content="" Width="84" Height="64"/>
-            <Button Content="Button" Width="74"/>
-            <Image Height="100" Width="100"/>
+            <Button x:Name="pearbtn" Content="" Width="86" Height="64">
+                <Button.Background>
+                    <ImageBrush ImageSource="pear-icon.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="orangebtn" Content="" Width="86" Height="64">
+                <Button.Background>
+                    <ImageBrush ImageSource="orange.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Content="Button" Width="75"/>
+            <Button x:Name="applebtn_Copy" Width="86" Height="64" Click="Button_Click_2">
+                <Button.Background>
+                    <ImageBrush ImageSource="9f2a63d7fcf4f314800dd3f4f40c4a67.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="applebtn_Copy1" Width="86" Height="64" Click="Button_Click_2">
+                <Button.Background>
+                    <ImageBrush ImageSource="9f2a63d7fcf4f314800dd3f4f40c4a67.png"/>
+                </Button.Background>
+            </Button>
         </ListBox>
-        <Image HorizontalAlignment="Left" Height="62" Margin="378,10,0,0" VerticalAlignment="Top" Width="94" Source="9f2a63d7fcf4f314800dd3f4f40c4a67.png" Grid.Column="1"/>
-        <Image HorizontalAlignment="Left" Height="48" VerticalAlignment="Top" Width="47" Source="714197.png" Margin="390,148,0,0" Grid.Column="1"/>
-        <Image HorizontalAlignment="Left" Height="50" Margin="390,215,0,0" VerticalAlignment="Top" Width="54" Source="pear-icon.png" Grid.Column="1"/>
-        <Image HorizontalAlignment="Left" Height="57" Margin="390,282,0,0" VerticalAlignment="Top" Width="61" Source="orange.png" Grid.Column="1"/>
         <DataGrid HorizontalAlignment="Left" Height="277" VerticalAlignment="Top" Width="257" Margin="151,439,0,-297" SelectionChanged="DataGrid_SelectionChanged_1" RowHeight="30" Grid.Column="1">
             <DataGrid.Columns>
                 <DataGridTextColumn Width="70" Header="Item"/>
