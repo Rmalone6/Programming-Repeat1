@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Windows;
+using System.Runtime.InteropServices;
 
 namespace WpfApp1
 {
@@ -24,6 +25,9 @@ namespace WpfApp1
     {
         ObservableCollection<Item> items = new ObservableCollection<Item>();
         public double sum { get; set; }
+        public double totalp { get; set; }
+
+        public int clicks;
         string Name { get; set; }
         public double Price { get; private set; }
         public int Quantity { get; private set; }
@@ -79,10 +83,38 @@ namespace WpfApp1
         }
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
+            
+            clicks = clicks + 1;
+            double discount = 0;
+
             double apple = 1.0;
             lbx.Items.Add("Apple        " + apple);
             sum = sum + apple;
+            
             Total.Text = sum.ToString();
+
+            totalp = sum - discount;
+            double totalpayable = totalp;
+
+            
+
+            if (clicks > 5)
+            {
+                discount = 0.3;
+                //Displays dicount number
+                Discount.Text = discount.ToString();
+                //displays total payable (sum - discount)
+
+
+
+                totalp = totalp - discount;
+
+
+
+            }
+            TotalPayable.Text = totalp.ToString();
+
+
         }
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
