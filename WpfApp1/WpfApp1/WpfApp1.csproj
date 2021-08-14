@@ -152,5 +152,38 @@
   <ItemGroup>
     <Resource Include="istockphoto-1290080473-612x612.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="765560.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="caul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="308-3087845_vegetables-icon-carrot-icon-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="32361-carrot-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="2166188.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="1702834.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="837560.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bun-bakery-food-nutrition-31129.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="coke-can-1-484187.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="unnamed.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

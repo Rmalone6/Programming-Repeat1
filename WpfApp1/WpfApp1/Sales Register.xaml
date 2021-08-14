@@ -25,8 +25,14 @@
         <Label Content="Discount" HorizontalAlignment="Left" Margin="51,308,0,0" VerticalAlignment="Top"/>
         <Rectangle Fill="#FF8888C3" HorizontalAlignment="Left" Height="1" Margin="33,334,0,0" Stroke="Black" VerticalAlignment="Top" Width="292" Grid.ColumnSpan="2"/>
         <Label Content="Total Payable" HorizontalAlignment="Left" Margin="47,340,0,0" VerticalAlignment="Top" FontStyle="Italic" FontWeight="Bold"/>
-        <ListBox x:Name="itemlist" HorizontalAlignment="Stretch" Width="257" Margin="365,49,0,0" Grid.Column="2" SelectionChanged="ListBox_SelectionChanged" Height="317" VerticalAlignment="Top" Background="#FFDEDEF0" Grid.ColumnSpan="5" MaxHeight="317" VerticalContentAlignment="Center" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Disabled">
-            <Slider Height="18" Width="207" Background="#FFDEDEF0" Foreground="White" BorderBrush="#FFF19C9C" ValueChanged="Slider_ValueChanged"/>
+        <ListBox x:Name="itemlist" HorizontalAlignment="Center" Width="297" Margin="330,49,5,0" Grid.Column="1" SelectionChanged="ListBox_SelectionChanged" Height="317" VerticalAlignment="Top" Background="#FFDEDEF0" MaxHeight="317" VerticalContentAlignment="Center" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Disabled" UseLayoutRounding="True">
+
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Vertical"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+
             <Button x:Name="applebtn" Width="86" Height="64" Click="Button_Click_2">
                 <Button.Background>
                     <ImageBrush ImageSource="9f2a63d7fcf4f314800dd3f4f40c4a67.png"/>
@@ -38,25 +44,54 @@
                 </Button.Background>
                 <Image Height="54" Width="15"/>
             </Button>
-            <Button x:Name="pearbtn" Content="" Width="86" Height="64">
+            <Button x:Name="pearbtn" Content="" Width="86" Height="64" Click="pearbtn_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="pear-icon.png" Stretch="Uniform"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="orangebtn" Content="" Width="86" Height="64">
+            <Button x:Name="grapebtn" Content="" Width="86" Height="64" Click="grapebtn_Click">
                 <Button.Background>
-                    <ImageBrush ImageSource="orange.png" Stretch="Uniform"/>
+                    <ImageBrush ImageSource="765560.png" Stretch="Uniform"/>
                 </Button.Background>
             </Button>
-            <Button Content="Button" Width="75"/>
-            <Button x:Name="applebtn_Copy" Width="86" Height="64" Click="Button_Click_2">
+            <Button x:Name="cauliflowerbtn" Content="" Width="86" Height="64" Click="cauliflowerbtn_Click">
                 <Button.Background>
-                    <ImageBrush ImageSource="9f2a63d7fcf4f314800dd3f4f40c4a67.png"/>
+                    <ImageBrush ImageSource="caul.png" Stretch="Uniform"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="applebtn_Copy1" Width="86" Height="64" Click="Button_Click_2">
+            <Button x:Name="carrotbtn" Content="" Width="86" Height="64" Click="carrotbtn_Click">
                 <Button.Background>
-                    <ImageBrush ImageSource="9f2a63d7fcf4f314800dd3f4f40c4a67.png"/>
+                    <ImageBrush ImageSource="32361-carrot-icon.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="chickenbtn" Content="" Width="86" Height="64" Click="chickenbtn_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="2166188.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="steak" Content="" Width="86" Height="64" Click="steak_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="1702834.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="eggbtn" Content="" Width="86" Height="64" Click="eggbtn_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="837560.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="bunbtn" Content="" Width="86" Height="64" Click="bunbtn_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="bun-bakery-food-nutrition-31129.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="cokebtn" Content="" Width="86" Height="64" Click="cokebtn_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="coke-can-1-484187.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="pastabtn" Content="" Width="86" Height="64" Click="orangebtn_Copy7_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="unnamed.png" Stretch="Uniform"/>
                 </Button.Background>
             </Button>
         </ListBox>
@@ -68,8 +103,8 @@
                 <DataGridComboBoxColumn/>
             </DataGrid.Columns>
         </DataGrid>
-        <Label Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="134,282,0,0" Width="83" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" Grid.ColumnSpan="2"/>
         <TextBlock x:Name="txtb" Grid.Column="1" HorizontalAlignment="Left" Margin="234,23,0,0" TextWrapping="Wrap" Text="Banana" VerticalAlignment="Top"/>
+        <TextBlock x:Name="Total" HorizontalAlignment="Left" Margin="130,287,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="85" Height="21"/>
 
     </Grid>
 </Window>

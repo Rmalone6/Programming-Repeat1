@@ -23,6 +23,7 @@ namespace WpfApp1
     public partial class Window1 : Window
     {
         ObservableCollection<Item> items = new ObservableCollection<Item>();
+        public double sum { get; set; }
         string Name { get; set; }
         public double Price { get; private set; }
         public int Quantity { get; private set; }
@@ -54,23 +55,7 @@ namespace WpfApp1
 
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            string name = "Apple";
-            double price = 2;
-            int quantity = 1;
-
-            //create item object 
-
-            Item item = new Item(name, price, quantity);
-
-            //add to observable collection
-            items.Add(item);
-
-
-
-
-        }
+        
 
         private void lbx_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -92,13 +77,106 @@ namespace WpfApp1
         {
 
         }
-
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            double apple = 1.0;
+            lbx.Items.Add("Apple        " + apple);
+            sum = sum + apple;
+            Total.Text = sum.ToString();
+        }
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            lbx.Items.Add("Banana");
-            
+            double banana = 1.10;
+            lbx.Items.Add("Banana       " + banana);
+            sum = sum + banana;
+            Total.Text = sum.ToString();
+            Total.Text = sum.ToString();
+
+        }
+        private void pearbtn_Click(object sender, RoutedEventArgs e)
+        {
+            double pear = 0.55;
+            lbx.Items.Add("Pear         " + pear);
+            sum = sum + pear;
+            Total.Text = sum.ToString();
+
+
+        }
+        private void grapebtn_Click(object sender, RoutedEventArgs e)
+        {
+            double grape = 0.20;
+            lbx.Items.Add("Grape        " + grape);
+            sum = sum + grape;
+            Total.Text = sum.ToString();
         }
 
+        private void cauliflowerbtn_Click(object sender, RoutedEventArgs e)
+        {
+            double cauliflower = 1.0;
+            lbx.Items.Add("Cauliflower  " + cauliflower);
+            sum = sum + cauliflower;
+            Total.Text = sum.ToString();
+        }
+
+        private void carrotbtn_Click(object sender, RoutedEventArgs e)
+        {
+            double carrot = 0.50;
+            lbx.Items.Add("Carrot       " + carrot);
+            sum = sum + carrot;
+            Total.Text = sum.ToString();
+        }
+
+        private void chickenbtn_Click(object sender, RoutedEventArgs e)
+        {
+            double chicken = 2.0;
+            lbx.Items.Add("Chicken      " + chicken);
+            sum = sum + chicken;
+            Total.Text = sum.ToString();
+        }
+
+        private void steak_Click(object sender, RoutedEventArgs e)
+        {
+            double steak = 3.0;
+            lbx.Items.Add("Steak       " + steak);
+            sum = sum + steak;
+            Total.Text = sum.ToString();
+        }
+
+        private void eggbtn_Click(object sender, RoutedEventArgs e)
+        {
+            double egg = 1.0;
+            lbx.Items.Add("Egg         " + egg);
+            sum = sum + egg;
+            Total.Text = sum.ToString();
+        }
+
+        private void bunbtn_Click(object sender, RoutedEventArgs e)
+        {
+            double bun = 1.70;
+            lbx.Items.Add("Bun         " + bun);
+            sum = sum + bun;
+            Total.Text = sum.ToString();
+        }
+
+        private void cokebtn_Click(object sender, RoutedEventArgs e)
+        {
+            double coke = 2.50;
+            lbx.Items.Add("Coke        " + coke);
+            sum = sum + coke;
+            Total.Text = sum.ToString();
+        }
+        private void orangebtn_Copy7_Click(object sender, RoutedEventArgs e)
+        {
+            double pasta = 2.50;
+            lbx.Items.Add("Pasta       " + pasta);
+            sum = sum + pasta;
+            Total.Text = sum.ToString();
+        }
+
+        private void Total_GotFocus(object sender, RoutedEventArgs e)
+        {
+
+        }
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
@@ -106,20 +184,18 @@ namespace WpfApp1
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-
+           
         }
 
-        private void Button_Click_5(object sender, RoutedEventArgs e)
-        {
-                    }
-
-        private void Button_Click_6(object sender, RoutedEventArgs e)
-        {
-                    }
+        
 
         private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
 
         }
+
+        
+
+        
     }
 }
