@@ -209,35 +209,66 @@ namespace WpfApp1
         }
         private void orangebtn_Copy7_Click(object sender, RoutedEventArgs e)
         {
-            string query = "Orange";
-            bool isExist = false;
+            double pasta = 0.7;
+
+            clicks = clicks + 1;
+            double discount = 0;
+            
+            sum = sum + pasta;
+            Total.Text = sum.ToString();
+            Total.Text = sum.ToString();
+
+            totalp = sum - discount;
+            double totalpayable = totalp;
+
+
+
+            if (clicks > 3)
+            {
+                discount = 0.2;
+                //Displays dicount number
+                Discount.Text = discount.ToString();
+                //displays total payable (sum - discount)
+
+
+
+                totalp = totalp - discount;
+
+
+
+            }
+            TotalPayable.Text = totalp.ToString();
+
+
+            string value = "Pasta";
+            bool exists = false;
             for (int i = 0; i < lbx.Items.Count; i++)
             {
-                var s = lbx.Items[i].ToString();
-                if (s.StartsWith(query))
+                var x = lbx.Items[i].ToString();
+                if (x.StartsWith(value))
                 {
-                    if (s == query)
+                    if (x == value)
                     {
-                        lbx.Items[i] = query + "x2";
-                        isExist = true;
+                        lbx.Items[i] = value + "x2";
+                        exists = true;
                         break;
                     }
                     else
                     {
                         
-                        var pattern = Regex.Escape(query);
+                        var pattern = Regex.Escape(value);
                        
-                        Match m = Regex.Match(s, "^" + pattern + @"x(\d+)$");
+                        Match m = Regex.Match(x, "^" + pattern + @"x(\d+)$");
                         if (m.Success)
                         {
-                            lbx.Items[i] = query + "x" + (Int32.Parse(m.Groups[1].Value) + 1);
-                            isExist = true;
+                            lbx.Items[i] = value + "x" + (Int32.Parse(m.Groups[1].Value) + 1);
+                            exists = true;
                             break;
                         }
                     }
                 }
             }
-            if (!isExist) lbx.Items.Add(query);
+            if (!exists) lbx.Items.Add(value);
 
 
 
