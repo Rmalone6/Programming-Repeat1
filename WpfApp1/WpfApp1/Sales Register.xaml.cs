@@ -15,6 +15,8 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Windows;
 using System.Runtime.InteropServices;
+using System.Windows.Media.Animation;
+using System.Text.RegularExpressions;
 
 namespace WpfApp1
 {
@@ -27,10 +29,14 @@ namespace WpfApp1
         public double sum { get; set; }
         public double totalp { get; set; }
 
+        
+
         public int clicks;
         string Name { get; set; }
+        
         public double Price { get; private set; }
-        public int Quantity { get; private set; }
+        public int Quantity { get; set; }
+        public int Count { get; private set; }
 
         public Window1()
         {
@@ -61,6 +67,13 @@ namespace WpfApp1
 
         
 
+        
+
+        private void lbx_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
         private void lbx_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             //check what has been selected
@@ -74,11 +87,7 @@ namespace WpfApp1
                 Price = selectedItem.Price;
                 Quantity = selectedItem.Quantity;
             }
-
-        }
-
-        private void lbx_Loaded(object sender, RoutedEventArgs e)
-        {
+            
 
         }
         private void Button_Click_2(object sender, RoutedEventArgs e)
@@ -136,8 +145,9 @@ namespace WpfApp1
         }
         private void grapebtn_Click(object sender, RoutedEventArgs e)
         {
-            double grape = 0.20;
-            lbx.Items.Add("Grape        " + grape);
+
+            double grape = 0.2;
+            lbx.Items.Add("Grape       " + grape);
             sum = sum + grape;
             Total.Text = sum.ToString();
         }
@@ -199,10 +209,43 @@ namespace WpfApp1
         }
         private void orangebtn_Copy7_Click(object sender, RoutedEventArgs e)
         {
-            double pasta = 2.50;
-            lbx.Items.Add("Pasta       " + pasta);
-            sum = sum + pasta;
-            Total.Text = sum.ToString();
+            string query = "Orange";
+            bool isExist = false;
+            for (int i = 0; i < lbx.Items.Count; i++)
+            {
+                var s = lbx.Items[i].ToString();
+                if (s.StartsWith(query))
+                {
+                    if (s == query)
+                    {
+                        lbx.Items[i] = query + "x2";
+                        isExist = true;
+                        break;
+                    }
+                    else
+                    {
+                        
+                        var pattern = Regex.Escape(query);
+                       
+                        Match m = Regex.Match(s, "^" + pattern + @"x(\d+)$");
+                        if (m.Success)
+                        {
+                            lbx.Items[i] = query + "x" + (Int32.Parse(m.Groups[1].Value) + 1);
+                            isExist = true;
+                            break;
+                        }
+                    }
+                }
+            }
+            if (!isExist) lbx.Items.Add(query);
+
+
+
+        }
+        private int increaseCount()
+        {
+            Count++;
+            return Count;
         }
 
         private void Total_GotFocus(object sender, RoutedEventArgs e)
