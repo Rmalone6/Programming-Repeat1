@@ -38,3 +38,5 @@ C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp
 C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
 C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\obj\Debug\Sales Register.g.cs
 C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\obj\Debug\Sales Register.baml
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\obj\Debug\Discount Page.g.cs
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\obj\Debug\Discount Page.baml

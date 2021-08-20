@@ -17,6 +17,7 @@ using System.Windows;
 using System.Runtime.InteropServices;
 using System.Windows.Media.Animation;
 using System.Text.RegularExpressions;
+using System.Security.Cryptography.X509Certificates;
 
 namespace WpfApp1
 {
@@ -26,6 +27,8 @@ namespace WpfApp1
     public partial class Window1 : Window
     {
         ObservableCollection<Item> items = new ObservableCollection<Item>();
+
+        List<int> myValues = new List<int>(new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 });
         public double sum { get; set; }
         public double totalp { get; set; }
 
@@ -37,6 +40,8 @@ namespace WpfApp1
         public double Price { get; private set; }
         public int Quantity { get; set; }
         public int Count { get; private set; }
+
+        public double TotalDiscount { get; set; }
 
         public Window1()
         {
@@ -92,24 +97,308 @@ namespace WpfApp1
         }
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
+
+            double apple = 0.5;
+            myValues[0] = myValues[0] +1;
+
+            clicks = clicks + 1;
             
+            
+                     
+
+            sum = sum + apple;
+            Total.Text = sum.ToString();
+            Total.Text = sum.ToString();
+
+            totalp = sum - TotalDiscount;
+            double totalpayable = totalp;
+
+
+            
+               
+                if (myValues[0] == 4)
+            {
+
+           
+                    TotalDiscount = TotalDiscount + 0.5;
+                    //Displays dicount number
+                    Discount.Text = TotalDiscount.ToString();
+                    //displays total payable (sum - discount)
+
+
+
+                    totalp = totalp - TotalDiscount;
+                }
+                
+                
+
+                
+                    
+
+
+
+                
+            
+            
+            TotalPayable.Text = totalp.ToString();
+
+
+            string value = "Apple";
+            bool exists = false;
+            for (int i = 0; i < lbx.Items.Count; i++)
+            {
+                var x = lbx.Items[i].ToString();
+                if (x.StartsWith(value))
+                {
+                    if (x == value)
+                    {
+                        lbx.Items[i] = value + "x2";
+                        exists = true;
+                        break;
+                    }
+                    else
+                    {
+
+                        var pattern = Regex.Escape(value);
+
+                        Match m = Regex.Match(x, "^" + pattern + @"x(\d+)$");
+                        if (m.Success)
+                        {
+                            lbx.Items[i] = value + "x" + (Int32.Parse(m.Groups[1].Value) + 1);
+                            exists = true;
+                            break;
+                        }
+                    }
+                }
+            }
+            if (!exists) lbx.Items.Add(value);
+
+
+        }
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            double banana = 0.62;
+
+            clicks = clicks + 1;
+
+            myValues[1] = myValues[1] + 1;
+
+
+            sum = sum + banana;
+            Total.Text = sum.ToString();
+            Total.Text = sum.ToString();
+
+            totalp = sum - TotalDiscount;
+            double totalpayable = totalp;
+
+
+
+            
+                if (myValues[1] == 9)
+                {
+                    TotalDiscount = TotalDiscount + 0.4;
+                    //Displays dicount number
+                    Discount.Text = TotalDiscount.ToString();
+                    //displays total payable (sum - discount)
+
+
+
+                    totalp = totalp - TotalDiscount;
+
+
+
+                }
+            
+            TotalPayable.Text = totalp.ToString();
+
+
+            string value = "Banana";
+            bool exists = false;
+            for (int i = 0; i < lbx.Items.Count; i++)
+            {
+                var x = lbx.Items[i].ToString();
+                if (x.StartsWith(value))
+                {
+                    if (x == value)
+                    {
+                        lbx.Items[i] = value + "x2";
+                        exists = true;
+                        break;
+                    }
+                    else
+                    {
+
+                        var pattern = Regex.Escape(value);
+
+                        Match m = Regex.Match(x, "^" + pattern + @"x(\d+)$");
+                        if (m.Success)
+                        {
+                            lbx.Items[i] = value + "x" + (Int32.Parse(m.Groups[1].Value) + 1);
+                            exists = true;
+                            break;
+                        }
+                    }
+                }
+            }
+            if (!exists) lbx.Items.Add(value);
+
+        }
+        private void pearbtn_Click(object sender, RoutedEventArgs e)
+        {
+            double pear = 0.45;
+
+            clicks = clicks + 1;
+            double discount = 0;
+            myValues[2] = myValues[2] + 1;
+
+
+            sum = sum + pear;
+            Total.Text = sum.ToString();
+            Total.Text = sum.ToString();
+
+            totalp = sum - TotalDiscount;
+            double totalpayable = totalp;
+
+
+
+            if (myValues[2] == 10)
+            {
+                TotalDiscount = TotalDiscount + 0.45;
+                //Displays dicount number
+                Discount.Text = discount.ToString();
+                //displays total payable (sum - discount)
+
+
+
+                totalp = totalp - TotalDiscount;
+
+
+
+            }
+            TotalPayable.Text = totalp.ToString();
+
+
+            string value = "Pear";
+            bool exists = false;
+            for (int i = 0; i < lbx.Items.Count; i++)
+            {
+                var x = lbx.Items[i].ToString();
+                if (x.StartsWith(value))
+                {
+                    if (x == value)
+                    {
+                        lbx.Items[i] = value + "x2";
+                        exists = true;
+                        break;
+                    }
+                    else
+                    {
+
+                        var pattern = Regex.Escape(value);
+
+                        Match m = Regex.Match(x, "^" + pattern + @"x(\d+)$");
+                        if (m.Success)
+                        {
+                            lbx.Items[i] = value + "x" + (Int32.Parse(m.Groups[1].Value) + 1);
+                            exists = true;
+                            break;
+                        }
+                    }
+                }
+            }
+            if (!exists) lbx.Items.Add(value);
+
+
+        }
+        private void grapebtn_Click(object sender, RoutedEventArgs e)
+        {
+
+            double grape = 0.1;
+
             clicks = clicks + 1;
             double discount = 0;
 
-            double apple = 1.0;
-            lbx.Items.Add("Apple        " + apple);
-            sum = sum + apple;
-            
+            myValues[3] = myValues[3] + 1;
+
+            sum = sum + grape;
+            Total.Text = sum.ToString();
             Total.Text = sum.ToString();
 
             totalp = sum - discount;
             double totalpayable = totalp;
 
-            
 
-            if (clicks > 5)
+
+            if (myValues[3] == 30)
             {
-                discount = 0.3;
+                discount = 0.5;
+                //Displays dicount number
+                Discount.Text = discount.ToString();
+                //displays total payable (sum - discount)
+
+
+
+                totalp = totalp - discount;
+
+
+
+            }
+            totalp = totalp - discount;
+            TotalPayable.Text = totalp.ToString();
+
+
+            string value = "Grape";
+            bool exists = false;
+            for (int i = 0; i < lbx.Items.Count; i++)
+            {
+                var x = lbx.Items[i].ToString();
+                if (x.StartsWith(value))
+                {
+                    if (x == value)
+                    {
+                        lbx.Items[i] = value + "x2";
+                        exists = true;
+                        break;
+                    }
+                    else
+                    {
+
+                        var pattern = Regex.Escape(value);
+
+                        Match m = Regex.Match(x, "^" + pattern + @"x(\d+)$");
+                        if (m.Success)
+                        {
+                            lbx.Items[i] = value + "x" + (Int32.Parse(m.Groups[1].Value) + 1);
+                            exists = true;
+                            break;
+                        }
+                    }
+                }
+            }
+            if (!exists) lbx.Items.Add(value);
+        }
+
+        private void cauliflowerbtn_Click(object sender, RoutedEventArgs e)
+        {
+            double cauliflower = 0.7;
+
+            clicks = clicks + 1;
+            double discount = 0;
+
+            myValues[4] = myValues[4] + 1;
+
+            sum = sum + cauliflower;
+            Total.Text = sum.ToString();
+            Total.Text = sum.ToString();
+
+            totalp = sum - discount;
+            double totalpayable = totalp;
+
+
+
+            if (myValues[4] == 8)
+            {
+                discount = 0.2;
                 //Displays dicount number
                 Discount.Text = discount.ToString();
                 //displays total payable (sum - discount)
@@ -124,88 +413,430 @@ namespace WpfApp1
             TotalPayable.Text = totalp.ToString();
 
 
-        }
-        private void Button_Click_3(object sender, RoutedEventArgs e)
-        {
-            double banana = 1.10;
-            lbx.Items.Add("Banana       " + banana);
-            sum = sum + banana;
-            Total.Text = sum.ToString();
-            Total.Text = sum.ToString();
+            string value = "Cauliflower";
+            bool exists = false;
+            for (int i = 0; i < lbx.Items.Count; i++)
+            {
+                var x = lbx.Items[i].ToString();
+                if (x.StartsWith(value))
+                {
+                    if (x == value)
+                    {
+                        lbx.Items[i] = value + "x2";
+                        exists = true;
+                        break;
+                    }
+                    else
+                    {
 
-        }
-        private void pearbtn_Click(object sender, RoutedEventArgs e)
-        {
-            double pear = 0.55;
-            lbx.Items.Add("Pear         " + pear);
-            sum = sum + pear;
-            Total.Text = sum.ToString();
+                        var pattern = Regex.Escape(value);
 
-
-        }
-        private void grapebtn_Click(object sender, RoutedEventArgs e)
-        {
-
-            double grape = 0.2;
-            lbx.Items.Add("Grape       " + grape);
-            sum = sum + grape;
-            Total.Text = sum.ToString();
-        }
-
-        private void cauliflowerbtn_Click(object sender, RoutedEventArgs e)
-        {
-            double cauliflower = 1.0;
-            lbx.Items.Add("Cauliflower  " + cauliflower);
-            sum = sum + cauliflower;
-            Total.Text = sum.ToString();
+                        Match m = Regex.Match(x, "^" + pattern + @"x(\d+)$");
+                        if (m.Success)
+                        {
+                            lbx.Items[i] = value + "x" + (Int32.Parse(m.Groups[1].Value) + 1);
+                            exists = true;
+                            break;
+                        }
+                    }
+                }
+            }
+            if (!exists) lbx.Items.Add(value);
         }
 
         private void carrotbtn_Click(object sender, RoutedEventArgs e)
         {
-            double carrot = 0.50;
-            lbx.Items.Add("Carrot       " + carrot);
+            double carrot = 0.7;
+
+            clicks = clicks + 1;
+            double discount = 0;
+
+            myValues[5] = myValues[5] + 1;
+
             sum = sum + carrot;
             Total.Text = sum.ToString();
+            Total.Text = sum.ToString();
+
+            totalp = sum - discount;
+            double totalpayable = totalp;
+
+
+
+            if (myValues[5] > 15)
+            {
+                discount = 0.2;
+                //Displays dicount number
+                Discount.Text = discount.ToString();
+                //displays total payable (sum - discount)
+
+
+
+                totalp = totalp - discount;
+
+
+
+            }
+            TotalPayable.Text = totalp.ToString();
+
+
+            string value = "Carrot";
+            bool exists = false;
+            for (int i = 0; i < lbx.Items.Count; i++)
+            {
+                var x = lbx.Items[i].ToString();
+                if (x.StartsWith(value))
+                {
+                    if (x == value)
+                    {
+                        lbx.Items[i] = value + "x2";
+                        exists = true;
+                        break;
+                    }
+                    else
+                    {
+                        
+                        var pattern = Regex.Escape(value);
+                       
+                        Match m = Regex.Match(x, "^" + pattern + @"x(\d+)$");
+                        if (m.Success)
+                        {
+                            lbx.Items[i] = value + "x" + (Int32.Parse(m.Groups[1].Value) + 1);
+                            exists = true;
+                            break;
+                        }
+                    }
+                }
+            }
+            if (!exists) lbx.Items.Add(value);
         }
 
         private void chickenbtn_Click(object sender, RoutedEventArgs e)
         {
-            double chicken = 2.0;
-            lbx.Items.Add("Chicken      " + chicken);
+            double chicken = 0.7;
+
+            clicks = clicks + 1;
+            double discount = 0;
+            myValues[6] = myValues[6] + 1;
+
             sum = sum + chicken;
             Total.Text = sum.ToString();
+            Total.Text = sum.ToString();
+
+            totalp = sum - discount;
+            double totalpayable = totalp;
+
+
+
+            if (myValues[6] == 8)
+            {
+                discount = 0.2;
+                //Displays dicount number
+                Discount.Text = discount.ToString();
+                //displays total payable (sum - discount)
+
+
+
+                totalp = totalp - discount;
+
+
+
+            }
+            TotalPayable.Text = totalp.ToString();
+
+
+            string value = "Chicken";
+            bool exists = false;
+            for (int i = 0; i < lbx.Items.Count; i++)
+            {
+                var x = lbx.Items[i].ToString();
+                if (x.StartsWith(value))
+                {
+                    if (x == value)
+                    {
+                        lbx.Items[i] = value + "x2";
+                        exists = true;
+                        break;
+                    }
+                    else
+                    {
+
+                        var pattern = Regex.Escape(value);
+
+                        Match m = Regex.Match(x, "^" + pattern + @"x(\d+)$");
+                        if (m.Success)
+                        {
+                            lbx.Items[i] = value + "x" + (Int32.Parse(m.Groups[1].Value) + 1);
+                            exists = true;
+                            break;
+                        }
+                    }
+                }
+            }
+            if (!exists) lbx.Items.Add(value);
         }
 
         private void steak_Click(object sender, RoutedEventArgs e)
         {
-            double steak = 3.0;
-            lbx.Items.Add("Steak       " + steak);
+            double steak = 0.7;
+
+            clicks = clicks + 1;
+            double discount = 0;
+
+            myValues[7] = myValues[7] + 1;
+
             sum = sum + steak;
             Total.Text = sum.ToString();
+            Total.Text = sum.ToString();
+
+            totalp = sum - discount;
+            double totalpayable = totalp;
+
+
+
+            if (myValues[7] == 3)
+            {
+                discount = 0.2;
+                //Displays dicount number
+                Discount.Text = discount.ToString();
+                //displays total payable (sum - discount)
+
+
+
+                totalp = totalp - discount;
+
+
+
+            }
+            TotalPayable.Text = totalp.ToString();
+
+
+            string value = "Steak";
+            bool exists = false;
+            for (int i = 0; i < lbx.Items.Count; i++)
+            {
+                var x = lbx.Items[i].ToString();
+                if (x.StartsWith(value))
+                {
+                    if (x == value)
+                    {
+                        lbx.Items[i] = value + "x2";
+                        exists = true;
+                        break;
+                    }
+                    else
+                    {
+
+                        var pattern = Regex.Escape(value);
+
+                        Match m = Regex.Match(x, "^" + pattern + @"x(\d+)$");
+                        if (m.Success)
+                        {
+                            lbx.Items[i] = value + "x" + (Int32.Parse(m.Groups[1].Value) + 1);
+                            exists = true;
+                            break;
+                        }
+                    }
+                }
+            }
+            if (!exists) lbx.Items.Add(value);
         }
 
         private void eggbtn_Click(object sender, RoutedEventArgs e)
         {
-            double egg = 1.0;
-            lbx.Items.Add("Egg         " + egg);
+            double egg = 0.7;
+
+            clicks = clicks + 1;
+            double discount = 0;
+
+            myValues[8] = myValues[8] + 1;
+
             sum = sum + egg;
             Total.Text = sum.ToString();
+            Total.Text = sum.ToString();
+
+            totalp = sum - discount;
+            double totalpayable = totalp;
+
+
+
+            if (myValues[8] == 3)
+            {
+                discount = 0.2;
+                //Displays dicount number
+                Discount.Text = discount.ToString();
+                //displays total payable (sum - discount)
+
+
+
+                totalp = totalp - discount;
+
+
+
+            }
+            TotalPayable.Text = totalp.ToString();
+
+
+            string value = "Egg";
+            bool exists = false;
+            for (int i = 0; i < lbx.Items.Count; i++)
+            {
+                var x = lbx.Items[i].ToString();
+                if (x.StartsWith(value))
+                {
+                    if (x == value)
+                    {
+                        lbx.Items[i] = value + "x2";
+                        exists = true;
+                        break;
+                    }
+                    else
+                    {
+
+                        var pattern = Regex.Escape(value);
+
+                        Match m = Regex.Match(x, "^" + pattern + @"x(\d+)$");
+                        if (m.Success)
+                        {
+                            lbx.Items[i] = value + "x" + (Int32.Parse(m.Groups[1].Value) + 1);
+                            exists = true;
+                            break;
+                        }
+                    }
+                }
+            }
+            if (!exists) lbx.Items.Add(value);
         }
 
         private void bunbtn_Click(object sender, RoutedEventArgs e)
         {
-            double bun = 1.70;
-            lbx.Items.Add("Bun         " + bun);
+            double bun = 0.7;
+
+            clicks = clicks + 1;
+            double discount = 0;
+
+            myValues[9] = myValues[9] + 1;
+
             sum = sum + bun;
             Total.Text = sum.ToString();
+            Total.Text = sum.ToString();
+
+            totalp = sum - discount;
+            double totalpayable = totalp;
+
+
+
+            if (myValues[9] == 3)
+            {
+                discount = 0.2;
+                //Displays dicount number
+                Discount.Text = discount.ToString();
+                //displays total payable (sum - discount)
+
+
+
+                totalp = totalp - discount;
+
+
+
+            }
+            TotalPayable.Text = totalp.ToString();
+
+
+            string value = "Bun";
+            bool exists = false;
+            for (int i = 0; i < lbx.Items.Count; i++)
+            {
+                var x = lbx.Items[i].ToString();
+                if (x.StartsWith(value))
+                {
+                    if (x == value)
+                    {
+                        lbx.Items[i] = value + "x2";
+                        exists = true;
+                        break;
+                    }
+                    else
+                    {
+
+                        var pattern = Regex.Escape(value);
+
+                        Match m = Regex.Match(x, "^" + pattern + @"x(\d+)$");
+                        if (m.Success)
+                        {
+                            lbx.Items[i] = value + "x" + (Int32.Parse(m.Groups[1].Value) + 1);
+                            exists = true;
+                            break;
+                        }
+                    }
+                }
+            }
+            if (!exists) lbx.Items.Add(value);
         }
 
         private void cokebtn_Click(object sender, RoutedEventArgs e)
         {
-            double coke = 2.50;
-            lbx.Items.Add("Coke        " + coke);
+            double coke = 0.7;
+
+            clicks = clicks + 1;
+            double discount = 0;
+
+            myValues[10] = myValues[10] + 1;
+
             sum = sum + coke;
             Total.Text = sum.ToString();
+            Total.Text = sum.ToString();
+
+            totalp = sum - discount;
+            double totalpayable = totalp;
+
+
+
+            if (myValues[10] == 1)
+            {
+                discount = 0.7;
+                //Displays dicount number
+                Discount.Text = discount.ToString();
+                //displays total payable (sum - discount)
+
+
+
+                totalp = totalp - discount;
+
+
+
+            }
+            TotalPayable.Text = totalp.ToString();
+
+
+            string value = "Coke";
+            bool exists = false;
+            for (int i = 0; i < lbx.Items.Count; i++)
+            {
+                var x = lbx.Items[i].ToString();
+                if (x.StartsWith(value))
+                {
+                    if (x == value)
+                    {
+                        lbx.Items[i] = value + "x2";
+                        exists = true;
+                        break;
+                    }
+                    else
+                    {
+
+                        var pattern = Regex.Escape(value);
+
+                        Match m = Regex.Match(x, "^" + pattern + @"x(\d+)$");
+                        if (m.Success)
+                        {
+                            lbx.Items[i] = value + "x" + (Int32.Parse(m.Groups[1].Value) + 1);
+                            exists = true;
+                            break;
+                        }
+                    }
+                }
+            }
+            if (!exists) lbx.Items.Add(value);
         }
         private void orangebtn_Copy7_Click(object sender, RoutedEventArgs e)
         {
@@ -213,7 +844,9 @@ namespace WpfApp1
 
             clicks = clicks + 1;
             double discount = 0;
-            
+
+            myValues[11] = myValues[11] + 1;
+
             sum = sum + pasta;
             Total.Text = sum.ToString();
             Total.Text = sum.ToString();
@@ -223,7 +856,7 @@ namespace WpfApp1
 
 
 
-            if (clicks > 3)
+            if (myValues[11] == 3)
             {
                 discount = 0.2;
                 //Displays dicount number
