@@ -32,6 +32,7 @@
         <Label Content="Kitchen Display" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="183,166,0,0" FontSize="16" Foreground="White" Grid.Column="2" Grid.Row="1"/>
         <Image HorizontalAlignment="Left" Height="57" Margin="211,121,0,0" VerticalAlignment="Top" Width="66" Source="15077.png" Grid.Column="2" Grid.Row="1"/>
         <Image HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="403,289,0,0" Grid.Row="1" Grid.Column="2" Source="3248932.png"/>
+        <Button x:Name="Back" Content="Back" HorizontalAlignment="Center" VerticalAlignment="Top" Width="106" Margin="79,343,348,0" Height="36" Background="#FFDEDEF0" OpacityMask="Black" Grid.Column="2" Grid.Row="1" Click="Back_Click" />
 
     </Grid>
 </Window>

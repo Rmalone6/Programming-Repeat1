@@ -37,5 +37,12 @@ namespace WpfApp1
             this.Close();
 
         }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            Window2 window = new Window2();
+            window.Show();
+            this.Close();
+        }
     }
 }

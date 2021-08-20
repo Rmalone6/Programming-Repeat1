@@ -30,5 +30,17 @@ namespace WpfApp1
             newWindow1.Show();
             this.Close();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Registerbtn_Click(object sender, RoutedEventArgs e)
+        {
+            Window4 Register = new Window4();
+            Register.Show();
+            this.Close();
+        }
     }
 }

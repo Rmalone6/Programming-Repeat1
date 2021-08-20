@@ -48,10 +48,7 @@ namespace WpfApp1
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+        
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
@@ -265,7 +262,7 @@ namespace WpfApp1
             {
                 TotalDiscount = TotalDiscount + 0.45;
                 //Displays dicount number
-                Discount.Text = discount.ToString();
+                Discount.Text = TotalDiscount.ToString();
                 //displays total payable (sum - discount)
 
 
@@ -324,21 +321,21 @@ namespace WpfApp1
             Total.Text = sum.ToString();
             Total.Text = sum.ToString();
 
-            totalp = sum - discount;
+            totalp = sum - TotalDiscount;
             double totalpayable = totalp;
 
 
 
             if (myValues[3] == 30)
             {
-                discount = 0.5;
+                TotalDiscount = TotalDiscount +  0.5;
                 //Displays dicount number
-                Discount.Text = discount.ToString();
+                Discount.Text = TotalDiscount.ToString();
                 //displays total payable (sum - discount)
 
 
 
-                totalp = totalp - discount;
+                totalp = totalp - TotalDiscount;
 
 
 
@@ -391,21 +388,21 @@ namespace WpfApp1
             Total.Text = sum.ToString();
             Total.Text = sum.ToString();
 
-            totalp = sum - discount;
+            totalp = sum - TotalDiscount;
             double totalpayable = totalp;
 
 
 
             if (myValues[4] == 8)
             {
-                discount = 0.2;
+                TotalDiscount = TotalDiscount+ 0.2;
                 //Displays dicount number
-                Discount.Text = discount.ToString();
+                Discount.Text = TotalDiscount.ToString();
                 //displays total payable (sum - discount)
 
 
 
-                totalp = totalp - discount;
+                totalp = totalp - TotalDiscount;
 
 
 
@@ -457,21 +454,21 @@ namespace WpfApp1
             Total.Text = sum.ToString();
             Total.Text = sum.ToString();
 
-            totalp = sum - discount;
+            totalp = sum - TotalDiscount;
             double totalpayable = totalp;
 
 
 
             if (myValues[5] > 15)
             {
-                discount = 0.2;
+                TotalDiscount = TotalDiscount+ 0.2;
                 //Displays dicount number
-                Discount.Text = discount.ToString();
+                Discount.Text = TotalDiscount.ToString();
                 //displays total payable (sum - discount)
 
 
 
-                totalp = totalp - discount;
+                totalp = totalp - TotalDiscount;
 
 
 
@@ -522,21 +519,21 @@ namespace WpfApp1
             Total.Text = sum.ToString();
             Total.Text = sum.ToString();
 
-            totalp = sum - discount;
+            totalp = sum - TotalDiscount;
             double totalpayable = totalp;
 
 
 
             if (myValues[6] == 8)
             {
-                discount = 0.2;
+                TotalDiscount = TotalDiscount + 0.2;
                 //Displays dicount number
-                Discount.Text = discount.ToString();
+                Discount.Text = TotalDiscount.ToString();
                 //displays total payable (sum - discount)
 
 
 
-                totalp = totalp - discount;
+                totalp = totalp - TotalDiscount;
 
 
 
@@ -588,21 +585,21 @@ namespace WpfApp1
             Total.Text = sum.ToString();
             Total.Text = sum.ToString();
 
-            totalp = sum - discount;
+            totalp = sum - TotalDiscount;
             double totalpayable = totalp;
 
 
 
             if (myValues[7] == 3)
             {
-                discount = 0.2;
+                TotalDiscount = TotalDiscount + 0.2;
                 //Displays dicount number
-                Discount.Text = discount.ToString();
+                Discount.Text = TotalDiscount.ToString();
                 //displays total payable (sum - discount)
 
 
 
-                totalp = totalp - discount;
+                totalp = totalp - TotalDiscount;
 
 
 
@@ -654,21 +651,21 @@ namespace WpfApp1
             Total.Text = sum.ToString();
             Total.Text = sum.ToString();
 
-            totalp = sum - discount;
+            totalp = sum - TotalDiscount;
             double totalpayable = totalp;
 
 
 
             if (myValues[8] == 3)
             {
-                discount = 0.2;
+                TotalDiscount = TotalDiscount+ 0.2;
                 //Displays dicount number
-                Discount.Text = discount.ToString();
+                Discount.Text = TotalDiscount.ToString();
                 //displays total payable (sum - discount)
 
 
 
-                totalp = totalp - discount;
+                totalp = totalp - TotalDiscount;
 
 
 
@@ -720,21 +717,21 @@ namespace WpfApp1
             Total.Text = sum.ToString();
             Total.Text = sum.ToString();
 
-            totalp = sum - discount;
+            totalp = sum - TotalDiscount;
             double totalpayable = totalp;
 
 
 
             if (myValues[9] == 3)
             {
-                discount = 0.2;
+                TotalDiscount = TotalDiscount +0.2;
                 //Displays dicount number
-                Discount.Text = discount.ToString();
+                Discount.Text = TotalDiscount.ToString();
                 //displays total payable (sum - discount)
 
 
 
-                totalp = totalp - discount;
+                totalp = totalp - TotalDiscount;
 
 
 
@@ -786,21 +783,21 @@ namespace WpfApp1
             Total.Text = sum.ToString();
             Total.Text = sum.ToString();
 
-            totalp = sum - discount;
+            totalp = sum - TotalDiscount;
             double totalpayable = totalp;
 
 
 
             if (myValues[10] == 1)
             {
-                discount = 0.7;
+                TotalDiscount = TotalDiscount +0.7;
                 //Displays dicount number
-                Discount.Text = discount.ToString();
+                Discount.Text = TotalDiscount.ToString();
                 //displays total payable (sum - discount)
 
 
 
-                totalp = totalp - discount;
+                totalp = totalp - TotalDiscount;
 
 
 
@@ -851,21 +848,21 @@ namespace WpfApp1
             Total.Text = sum.ToString();
             Total.Text = sum.ToString();
 
-            totalp = sum - discount;
+            totalp = sum - TotalDiscount;
             double totalpayable = totalp;
 
 
 
             if (myValues[11] == 3)
             {
-                discount = 0.2;
+                TotalDiscount = TotalDiscount +0.2;
                 //Displays dicount number
-                Discount.Text = discount.ToString();
+                Discount.Text = TotalDiscount.ToString();
                 //displays total payable (sum - discount)
 
 
 
-                totalp = totalp - discount;
+                totalp = totalp - TotalDiscount;
 
 
 
@@ -933,8 +930,71 @@ namespace WpfApp1
 
         }
 
-        
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+           //Soft Drink Filter
 
-        
+            itemlist.Items.Clear();
+            itemlist.Items.Add(cokebtn);
+        }
+
+        private void Reset_Click(object sender, RoutedEventArgs e)
+        {
+            itemlist.Items.Clear();
+            itemlist.Items.Add(applebtn);
+            itemlist.Items.Add(bananabtn);
+            itemlist.Items.Add(pearbtn);
+            itemlist.Items.Add(grapebtn);
+            itemlist.Items.Add(cauliflowerbtn);
+            itemlist.Items.Add(carrotbtn);
+            itemlist.Items.Add(chickenbtn);
+            itemlist.Items.Add(steak);
+            itemlist.Items.Add(eggbtn);
+            itemlist.Items.Add(bunbtn);
+            itemlist.Items.Add(cokebtn);
+            itemlist.Items.Add(pastabtn);
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void FoodFilter_Click(object sender, RoutedEventArgs e)
+        {
+            itemlist.Items.Clear();
+            itemlist.Items.Clear();
+            itemlist.Items.Add(applebtn);
+            itemlist.Items.Add(bananabtn);
+            itemlist.Items.Add(pearbtn);
+            itemlist.Items.Add(grapebtn);
+            itemlist.Items.Add(cauliflowerbtn);
+            itemlist.Items.Add(carrotbtn);
+            itemlist.Items.Add(chickenbtn);
+            itemlist.Items.Add(steak);
+            itemlist.Items.Add(eggbtn);
+            itemlist.Items.Add(bunbtn);
+            itemlist.Items.Add(pastabtn);
+
+        }
+
+        private void FruitFilter_Click(object sender, RoutedEventArgs e)
+        {
+            itemlist.Items.Clear();
+            itemlist.Items.Add(applebtn);
+            itemlist.Items.Add(bananabtn);
+            itemlist.Items.Add(pearbtn);
+            itemlist.Items.Add(grapebtn);
+         
+
+        }
+
+        private void MeatFilter_Click(object sender, RoutedEventArgs e)
+        {
+            itemlist.Items.Clear();
+            itemlist.Items.Add(chickenbtn);
+            itemlist.Items.Add(steak);
+
+        }
     }
 }

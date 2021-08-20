@@ -40,3 +40,36 @@ C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp
 C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\obj\Debug\Sales Register.baml
 C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\obj\Debug\Discount Page.g.cs
 C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\obj\Debug\Discount Page.baml
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\obj\Debug\Register.g.cs
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\obj\Debug\Register.baml
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\obj\Debug\WpfApp1.exe.config
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\bin\Debug\Microsoft.Data.Tools.Components.dll
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\bin\Debug\Microsoft.Data.Tools.Schema.Sql.dll
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\bin\Debug\Microsoft.Data.Tools.Schema.Sql.UnitTesting.dll
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\bin\Debug\Microsoft.Data.Tools.Schema.Sql.UnitTestingAdapter.dll
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\bin\Debug\Microsoft.Data.Tools.Utilities.dll
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\bin\Debug\Microsoft.Build.Framework.dll
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\bin\Debug\Microsoft.SqlServer.TransactSql.ScriptDom.dll
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\bin\Debug\Microsoft.Build.dll
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\bin\Debug\System.Memory.dll
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\bin\Debug\System.Threading.Tasks.Dataflow.dll
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\bin\Debug\System.Buffers.dll
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\bin\Debug\cs\Microsoft.Build.resources.dll
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\bin\Debug\de\Microsoft.Build.resources.dll
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\bin\Debug\en\Microsoft.Build.resources.dll
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\bin\Debug\es\Microsoft.Build.resources.dll
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\bin\Debug\fr\Microsoft.Build.resources.dll
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\bin\Debug\it\Microsoft.Build.resources.dll
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\bin\Debug\ja\Microsoft.Build.resources.dll
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\bin\Debug\ko\Microsoft.Build.resources.dll
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\bin\Debug\pl\Microsoft.Build.resources.dll
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\bin\Debug\pt-BR\Microsoft.Build.resources.dll
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\bin\Debug\ru\Microsoft.Build.resources.dll
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\bin\Debug\tr\Microsoft.Build.resources.dll
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\bin\Debug\zh-Hans\Microsoft.Build.resources.dll
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\bin\Debug\zh-Hant\Microsoft.Build.resources.dll
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CopyComplete
