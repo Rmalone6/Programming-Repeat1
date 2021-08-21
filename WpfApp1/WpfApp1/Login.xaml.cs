@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -42,5 +45,39 @@ namespace WpfApp1
             Register.Show();
             this.Close();
         }
-    }
-}
+
+        private void login_test_Click(object sender, RoutedEventArgs e)
+        {
+
+            try
+            {
+                SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-NC0NE7I;Initial Catalog=Login;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+                connection.Open();
+                SqlCommand checker = new SqlCommand("SELECT COUNT (*) from Login WHERE Username=@UserName AND Password = @Password", connection);
+                checker.Parameters.Add(new SqlParameter("@userName", Usernamelog.Text));
+                checker.Parameters.Add(new SqlParameter("@password", Passwordlog.Text));
+                var count = Convert.ToInt32(checker.ExecuteScalar());
+                connection.Close();
+                if (count > 0)
+                {
+                    Window1 wen = new Window1();
+                    wen.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Incorrect password or username.");
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Incorrect password or username.");
+            }
+        }
+
+
+        }
+           
+            
+        }
+    
+
