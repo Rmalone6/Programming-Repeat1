@@ -75,3 +75,5 @@ C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp
 C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CopyComplete
 C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\obj\Debug\Customers.g.cs
 C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\obj\Debug\Customers.baml
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\obj\Debug\Deals.g.cs
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\obj\Debug\Deals.baml

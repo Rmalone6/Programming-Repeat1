@@ -113,7 +113,7 @@ namespace WpfApp1
 
             
                
-                if (myValues[0] == 4)
+                if (myValues[0] == 2)
             {
 
            
@@ -191,9 +191,9 @@ namespace WpfApp1
 
 
             
-                if (myValues[1] == 9)
+                if (myValues[1] == 10)
                 {
-                    TotalDiscount = TotalDiscount + 0.4;
+                    TotalDiscount = TotalDiscount + 1.24;
                     //Displays dicount number
                     Discount.Text = TotalDiscount.ToString();
                     //displays total payable (sum - discount)
@@ -524,9 +524,9 @@ namespace WpfApp1
 
 
 
-            if (myValues[6] == 8)
+            if (myValues[6] == 5)
             {
-                TotalDiscount = TotalDiscount + 0.2;
+                TotalDiscount = TotalDiscount + 0.7;
                 //Displays dicount number
                 Discount.Text = TotalDiscount.ToString();
                 //displays total payable (sum - discount)

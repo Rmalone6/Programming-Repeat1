@@ -60,8 +60,10 @@ namespace WpfApp1
                 connection.Close();
                 if (count > 0)
                 {
+                    
                     MainWindow wen = new MainWindow();
                     wen.Show();
+                    this.Close();
                 }
                 else
                 {

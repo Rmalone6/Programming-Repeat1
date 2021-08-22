@@ -17,7 +17,7 @@
             <ColumnDefinition Width="145*"/>
             <ColumnDefinition Width="533*"/>
         </Grid.ColumnDefinitions>
-        <Label Content="Welcome" Grid.Column="2" HorizontalAlignment="Left" Margin="34,23,0,0" VerticalAlignment="Top" Foreground="#FF8888C3" FontSize="40" FontWeight="Bold" Grid.Row="1"/>
+        <Label Grid.Column="2" HorizontalAlignment="Left" Margin="34,23,0,0" VerticalAlignment="Top" Foreground="#FF8888C3" FontSize="40" FontWeight="Bold" Grid.Row="1"/>
         <Button Content="" HorizontalAlignment="Left" Margin="86,121,0,0" VerticalAlignment="Top" Width="153" Background="#FF8888C3" Height="76" Click="Button_Click_1" Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="1"/>
         <Label Content="Sales Register" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="106,166,0,0" FontSize="16" Foreground="White" Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="1"/>
         <Image HorizontalAlignment="Left" Height="63" Margin="130,121,0,0" VerticalAlignment="Top" Width="58" Source="53-536255_cash-register-cash-register-icon.png" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>
@@ -25,15 +25,16 @@
         <Button Content="" HorizontalAlignment="Left" Margin="86,244,0,0" VerticalAlignment="Top" Width="153" Background="#FF8888C3" Height="76" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2"/>
         <Label Content="Employee" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="122,289,0,0" FontSize="16" Foreground="White" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2"/>
         <Image HorizontalAlignment="Left" Height="70" Margin="130,234,0,0" VerticalAlignment="Top" Width="71" Source="person-male.png" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2"/>
-        <Button x:Name="Customerbtn" Content="" HorizontalAlignment="Left" Margin="164,244,0,0" VerticalAlignment="Top" Width="153" Background="#FF8888C3" Height="76" Grid.Column="2" Grid.Row="1" Click="Customerbtn_Click"/>
-        <Label Content="Customers" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="197,289,0,0" FontSize="16" Foreground="White" Grid.Column="2" Grid.Row="1"/>
-        <Image HorizontalAlignment="Left" Height="60" Margin="211,244,0,0" VerticalAlignment="Top" Width="71" Source="d1f3ccc7e836617fb6e5db7fed1ae90b.png" Grid.Column="2" Grid.Row="1"/>
-        <Button Content="" HorizontalAlignment="Left" Margin="164,121,0,0" VerticalAlignment="Top" Width="153" Background="#FF8888C3" Height="76" Grid.Column="2" Grid.Row="1"/>
-        <Label Content="Kitchen Display" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="183,166,0,0" FontSize="16" Foreground="White" Grid.Column="2" Grid.Row="1"/>
-        <Image HorizontalAlignment="Left" Height="57" Margin="211,121,0,0" VerticalAlignment="Top" Width="66" Source="15077.png" Grid.Column="2" Grid.Row="1"/>
-        <Image HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="403,289,0,0" Grid.Row="1" Grid.Column="2" Source="3248932.png"/>
+        <Button x:Name="Customerbtn" Content="" HorizontalAlignment="Left" Margin="165,121,0,0" VerticalAlignment="Top" Width="153" Background="#FF8888C3" Height="76" Grid.Column="2" Grid.Row="1" Click="Customerbtn_Click"/>
+        <Label Content="Customers" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="197,166,0,0" FontSize="16" Foreground="White" Grid.Column="2" Grid.Row="1"/>
+        <Image HorizontalAlignment="Left" Height="60" Margin="211,121,0,0" VerticalAlignment="Top" Width="71" Source="d1f3ccc7e836617fb6e5db7fed1ae90b.png" Grid.Column="2" Grid.Row="1"/>
         <Button x:Name="Back" Content="Back" HorizontalAlignment="Center" VerticalAlignment="Top" Width="106" Margin="79,343,348,0" Height="36" Background="#FFDEDEF0" OpacityMask="Black" Grid.Column="2" Grid.Row="1" Click="Back_Click" />
-        <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="373,178,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Loaded="TextBlock_Loaded"/>
+        <Button Content="" Grid.Column="2" HorizontalAlignment="Left" Margin="183,244,0,0" Grid.Row="1" VerticalAlignment="Top" Width="117" Height="76" BorderBrush="White" Click="Button_Click_2">
+            <Button.Background>
+                <ImageBrush ImageSource="3248932.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Welcome" VerticalAlignment="Top" Height="62" Width="225" FontFamily="Segoe UI Black" FontSize="48" Foreground="White" Background="#FFDEDEF0" Grid.Column="2" Margin="23,23,0,0" Grid.Row="1"/>
 
     </Grid>
 </Window>

@@ -49,11 +49,21 @@ namespace WpfApp1
         {
             Window5 dr = new Window5();
             dr.Show();
+            this.Close();
         }
 
         private void TextBlock_Loaded(object sender, RoutedEventArgs e)
         {
             
+        }
+        
+       
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Window6 dr = new Window6();
+            dr.Show();
+            this.Close();
         }
     }
 }
