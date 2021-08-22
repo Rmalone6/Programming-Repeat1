@@ -73,3 +73,5 @@ C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp
 C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\bin\Debug\zh-Hans\Microsoft.Build.resources.dll
 C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\bin\Debug\zh-Hant\Microsoft.Build.resources.dll
 C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CopyComplete
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\obj\Debug\Customers.g.cs
+C:\Users\Ryan\Documents\General\Year 2\Second Semester\Programming-Repeat\WpfApp1\WpfApp1\obj\Debug\Customers.baml

@@ -44,5 +44,16 @@ namespace WpfApp1
             window.Show();
             this.Close();
         }
+
+        private void Customerbtn_Click(object sender, RoutedEventArgs e)
+        {
+            Window5 dr = new Window5();
+            dr.Show();
+        }
+
+        private void TextBlock_Loaded(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }
