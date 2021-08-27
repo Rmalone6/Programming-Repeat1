@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Window6" Height="450" Width="800">
+        Title="Window6" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="335,41,0,0" TextWrapping="Wrap" Text="Deals" VerticalAlignment="Top" Height="62" Width="133" FontFamily="Segoe UI Black" FontSize="48" Foreground="White" Background="#FFDEDEF0"/>
         <Image HorizontalAlignment="Left" Height="124" Margin="223,108,0,0" VerticalAlignment="Top" Width="135" Source="9f2a63d7fcf4f314800dd3f4f40c4a67.png"/>

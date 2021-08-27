@@ -49,6 +49,7 @@ namespace WpfApp1
         {
             MainWindow dr = new MainWindow();
             dr.Show();
+            this.Close();
         }
     }
 }

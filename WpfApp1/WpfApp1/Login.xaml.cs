@@ -76,8 +76,16 @@ namespace WpfApp1
             }
         }
 
+       
+
+        private void Timetbx_Loaded(object sender, RoutedEventArgs e)
+        {
+            Timetbx.Text = DateTime.Now.ToString();
 
         }
+
+      
+    }
            
             
         }

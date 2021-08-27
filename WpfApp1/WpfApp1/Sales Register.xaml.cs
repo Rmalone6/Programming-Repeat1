@@ -996,5 +996,7 @@ namespace WpfApp1
             itemlist.Items.Add(steak);
 
         }
+
+        
     }
 }

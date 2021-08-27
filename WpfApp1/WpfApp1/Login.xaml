@@ -23,6 +23,7 @@
         </Button>
         <TextBlock HorizontalAlignment="Left" Margin="563,356,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Register"/><LineBreak/><Run/></TextBlock>
         <Button x:Name="login_test" Content="Login" HorizontalAlignment="Center" VerticalAlignment="Top" Width="106" Margin="530,297,156,0" Height="36" Background="#FFDEDEF0" OpacityMask="Black" Click="login_test_Click" />
+        <TextBlock x:Name="Timetbx" HorizontalAlignment="Left" Margin="50,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Loaded="Timetbx_Loaded" Height="63" FontSize="24" Background="#FFDEDEF0" Foreground="White"/>
 
     </Grid>
 </Window>
